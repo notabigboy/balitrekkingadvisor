@@ -1,0 +1,363 @@
+/*@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('../fonts/Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v11/UyBMtLsHKBKXelqf4x7VRQ.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('../fonts/Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v11/1YwB1sO8YE1Lyjf12WNiUA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+ latin-ext 
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lato Bold'), local('../fonts/Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v11/ObQr5XYcoH0WBoUxiaYK3_Y6323mHUZFJMgTvxaG2iE.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lato Bold'), local('../fonts/Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v11/H2DMvhDLycM56KNuAtbJYA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+*/
+/*@import url(http://fonts.googleapis.com/css?family=Dosis:400,200,300,500,600,700,800);*/
+@import url(http://fonts.googleapis.com/css?family=Delius:400,200,300,500,600,700,800);
+@import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,300,200,700);
+@import 'https://fonts.googleapis.com/css?family=ABeeZee';
+
+body {
+  padding-top: 100px;
+  color: #5a5a5a;
+  font-family: 'ABeeZee', sans-serif;
+  background-image: url('../images/cover.jpg'); 
+  background-repeat: no-repeat; 
+  background-position: center center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-color: rgba(0,0,0,0.8); 
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/cover.jpg', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/cover.jpg', sizingMethod='scale')";
+}
+
+section {
+  background-color: #EBEBEB;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Yanone Kaffeesatz', 'sans-serif';
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+h1 {
+  line-height: 1.25;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 40px;
+  margin-bottom: 60px;
+}
+h1 span {
+  color: #fff !important;
+  font-weight: 500;
+}
+h1 small {
+  display: block;
+  color: #ccc;
+}
+
+h2.text-heading {
+  /*font-size: 36px;*/
+  padding-bottom: 30px;
+  margin-bottom: 40px;
+  border-bottom: 1px solid #777; 
+}
+h2.text-heading.black {
+  color: #333;
+  border-color: #333;
+}
+
+.text-white {
+  color: #fff;
+  border-color: #fff;
+}
+
+.text-black {
+  color: #000;
+}
+
+#services {
+  background-color: #33888F;
+  color: #ddd;
+  text-align: center;
+}
+
+#trekkings {
+  text-align: center;
+  padding-bottom: 60px;
+}
+#trekkings .panel-title {
+  line-height: 1.25;
+  font-size: 1.25em;
+}
+#trekkings ul,
+#trekkings dl {
+  margin-top: 20px;
+}
+#trekkings li {
+  padding: 5px 0;
+}
+#trekkings .dl-horizontal dt {
+  float: left;
+  width: 50%;
+  clear: left;
+  text-align: right;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+#trekkings .dl-horizontal dd {
+  text-align: left;
+  margin-left: 55%;
+}
+
+.panel-danger {
+  border-color: #C34C39;
+}
+.panel-danger > .panel-heading {
+  color: #fff;
+  background-color: #C34C39;
+  border-color: #C34C39;
+}
+.panel-danger > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: #C34C39;
+}
+.panel-danger > .panel-heading .badge {
+  color: #fcf8e3;
+  background-color: #fff;
+}
+.panel-danger > .panel-footer + .panel-collapse > .panel-body {
+  border-bottom-color: #C34C39;
+}
+
+.the-price
+{
+  background-color: rgba(220,220,220,.17);
+  box-shadow: 0 1px 0 #dcdcdc, inset 0 1px 0 #fff;
+  padding: 20px;
+  margin: 0;
+}
+.the-price h2
+{
+  line-height: 1em;
+  padding: 0;
+  margin: 0;
+  font-weight: 700;
+}
+.the-price h2 small {
+  font-weight: normal;
+}
+
+.page-title {
+  padding-top: 200px;
+  padding-bottom: 60px;
+  color: #fff;
+}
+.page-title h1 {
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.article {
+  background-color: #EBEBEB;
+  padding: 60px 0;
+  /*font-size: 115%;*/
+}
+.article h3 {
+  margin-top: 40px;
+}
+.article h3:first-child {
+  margin-top: 0;
+}
+.article table th,
+.article table td {
+  vertical-align: center;
+}
+.article table thead th,
+.article table tbody td {
+  text-align: center!important;
+}
+.article table tbody th {
+  width: 1%;
+  white-space: nowrap;
+}
+
+#gmap {
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+}
+#testimonials {
+  /*padding: 60px;*/
+}
+.testimonial{
+    margin-bottom: 10px;
+}
+.testimonial-section {
+  width: 100%;
+  height: auto;
+  padding: 15px;
+  /*font-size: 120%;*/
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  position: relative;
+  border: 1px solid #fff;
+}
+.testimonial-section:after {
+  top: 100%;
+  left: 50px;
+  border: solid transparent;
+  content: " ";
+  position: absolute;
+  border-top-color: #fff;
+  border-width: 15px;
+  margin-left: -15px;
+}
+.testimonial-desc {
+  margin-top: 20px;
+  text-align:left;
+  padding-left: 15px;
+}
+.testimonial-desc img {
+  border: 1px solid #f5f5f5;
+  border-radius: 150px;
+  height: 70px;
+  padding: 3px;
+  width: 70px;
+  display:inline-block;
+  vertical-align: top;
+}
+.testimonial-writer{
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 10px;
+}
+.testimonial-writer-name{
+  /*font-size: 110%;*/
+  font-weight: bold;
+}
+.testimonial-writer-designation{
+  font-size: 80%;
+}
+.testimonial-writer-company{
+  font-size: 85%;
+}
+/*---- Outlined Styles ----*/
+.testimonial.testimonial-default{
+    
+}
+.testimonial.testimonial-default .testimonial-section{
+  border-color: #777;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.testimonial.testimonial-default .testimonial-section:after{
+  border-top-color: #777;
+}
+.testimonial.testimonial-default .testimonial-desc{
+    
+}
+.testimonial.testimonial-default .testimonial-desc img{
+  border-color: #777;
+}
+.testimonial.testimonial-default .testimonial-writer-name{
+  color: #777;
+}
+.testimonial.testimonial-primary{
+    
+}
+.testimonial.testimonial-primary .testimonial-section{
+  border-color: #337AB7;
+  color: #286090;
+  background-color: rgba(51, 122, 183, 0.1);
+}
+.testimonial.testimonial-primary .testimonial-section:after{
+  border-top-color: #337AB7;
+}
+.testimonial.testimonial-primary .testimonial-desc{
+    
+}
+.testimonial.testimonial-primary .testimonial-desc img{
+  border-color: #337AB7;
+}
+.testimonial.testimonial-primary .testimonial-writer-name{
+  color: #337AB7;
+}
+
+#footer {
+  text-align: center;
+  background-color: #2E2E2E;
+  color: #7F7F7F;
+  /*font-size: 16px;*/
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+#footer a,
+#footer a:hover {
+  text-decoration: none;
+}
+#footer .socials {
+  text-align: center;
+}
+#footer .socials a {
+  color: #7F7F7F;
+}
+#footer .socials a:hover {
+  color: #0577B6;
+}
+#footer hr {
+  border-color: #5A5A5A;
+}
+
+.top-navbar {
+  background-color: #0577B6;
+  /*font-family: 'Yanone Kaffeesatz', 'sans-serif';*/
+  color: #fff;
+}
+.top-navbar ul li {
+  padding-top: 10px;
+}
+.navbar-default {
+  background-color: #EBEBEB;
+  /*font-family: 'Yanone Kaffeesatz', 'sans-serif';*/
+}
+.navbar-default .navbar-nav > li > a {
+  font-family: 'Yanone Kaffeesatz', 'sans-serif';
+  /*font-weight: 600;*/
+  text-transform: uppercase;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #0577b6;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #0577b6;
+}
+.navbar-brand {
+  padding: 0;
+}
+.navbar-brand img {
+  height: 100px;
+}
