@@ -1,238 +1,76 @@
-@media only screen and (max-width: 479px) {
+/* Tablet or lower */
+@media (max-width: 60em) {
   html{
     height:100%;
     min-height:100%;
   }
   body {
-    font-size:1.1em;
     min-height:100%;
   }
-  h1 { font-size:2em; }
-  h2 { font-size:1.8em; }
-  h3 { font-size:1.55em; }
-  h4 { font-size:1.35em; }
-  h5 { font-size:1.1em; }
-  h6 { font-size:1em; }
   section { padding: 20px 0; }
-  .darken {
-    background-color: rgba(0,0,0,0.8);  
-  }
-  .page-title {
-    padding-top: 100px;
-    padding-bottom: 40px;
-  }
   .navbar-default .navbar-nav > li > a {
-    font-size: 18px;
+    font-size: 1.375em;
+  }
+  .navbar-brand img {
+    height: 100px;
+  }
+  .navbar-toggle {
+    padding: 12px;
+  }
+  .navbar-toggle .icon-bar {
+    width: 30px;
+    height: 3px;
   }
   .top-navbar {
-    font-size: 0.8em;
+    font-size: 0.875em;
   }
-  .carousel {
-    height: 280px;
-  }
-  .carousel .item {
-    height: 280px;
-  }
+  .carousel,
+  .carousel .item,
   .carousel-inner > .item > img {
-    height: 280px;
-  }
-  .carousel-caption {
-    padding-top: 0;
-    padding-right: 5%;
-    padding-left: 5%;
-  }
-  .carousel-caption p {
-    font-size: 0.8em;
-    font-weight: normal;
-  }
-  .article table th {
-    font-size: 0.85em;
+    height: 300px;
   }
 }
 
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-  html{
-    height:100%;
-    min-height:100%;
-  }
-  body {
-    font-size:1.4em;
-    min-height:100%;
-  }
-  h1 { font-size:2em; }
-  h2 { font-size:1.75em; }
-  h3 { font-size:1.55em; }
-  h4 { font-size:1.35em; }
-  h5 { font-size:1.1em; }
-  h6 { font-size:1em; }
+/* Phone only */
+@media (max-width: 40em) {}
+
+/* Tablet or higher */
+@media (min-width: 40em) {
   section { padding: 30px 0; }
-  .darken {
-    background-color: rgba(0,0,0,0.8);  
-  }
-  .page-title {
-    padding-top: 100px;
-    padding-bottom: 40px;
-  }
   .navbar-default .navbar-nav > li > a {
-    font-size: 18px;
+    font-size: 1.250em;
   }
   .top-navbar {
-    font-size: 0.8em;
+    font-size: 0.875em;
   }
-  .carousel {
-    height: 380px;
-  }
-  .carousel .item {
-    height: 380px;
-  }
+  .carousel,
+  .carousel .item,
   .carousel-inner > .item > img {
-    height: 380px;
-  }
-  .carousel-caption {
-    padding-top: 0;
-    padding-right: 5%;
-    padding-left: 5%;
-  }
-  .carousel-caption p {
-    font-size: 0.9em;
-    font-weight: normal;
-  }
-  .article table th {
-    font-size: 0.85em;
-  }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 979px) {
-  html{
-    height:100%;
-    min-height:100%;
-  }
-  body {
-    font-size:1.55em;
-    min-height:100%;
-  }
-  h1 { font-size:2.1em; }
-  h2 { font-size:1.8em; }
-  h3 { font-size:1.6em; }
-  h4 { font-size:1.4em; }
-  h5 { font-size:1.2em; }
-  h6 { font-size:1em; }
-  section { padding: 40px 0; }
-  .darken {
-    background-color: rgba(0,0,0,0.8);  
-  }
-  .page-title {
-    padding-top: 150px;
-    padding-bottom: 50px;
-  }
-  .navbar-default .navbar-nav > li > a {
-    font-size: 18px;
-  }
-  .top-navbar {
-    font-size: 0.8em;
-  }
-  .carousel {
-    height: 500px;
-  }
-  .carousel .item {
-    height: 500px;
-  }
-  .carousel-inner > .item > img {
-    height: 500px;
-  }
-  .carousel-caption {
-    padding-right: 10%;
-    padding-left: 10%;
-    padding-top: 10px;
-  }
-  .article table th {
-    font-size: 0.8em;
-  }
-}
-
-@media only screen and (min-width: 980px) and (max-width: 1199px) {
-  /*html{
-    height:100%;
-    min-height:100%;
-  }*/
-  body {
-    font-size:1.7em;
-    /*min-height:100%;*/
-  }
-  h1 { font-size:2.2em; }
-  h2 { font-size:1.8em; }
-  h3 { font-size:1.6em; }
-  h4 { font-size:1.4em; }
-  h5 { font-size:1.2em; }
-  h6 { font-size:1em; }
-  section { padding: 50px 0; }
-  .darken {
-    background-color: rgba(0,0,0,0.8);  
-  }
-  .page-title {
-    padding-top: 180px;
-    padding-bottom: 55px;
-  }
-  .navbar-default .navbar-nav > li > a {
-    font-size: 20px;
-  }
-  .top-navbar {
-    font-size: 0.8em;
-  }
-  .carousel {
-    height: 540px;
-  }
-  .carousel .item {
-    height: 540px;
-  }
-  .carousel-inner > .item > img {
-    height: 540px;
+    height: 400px;
   }
   .carousel-caption {
     padding-right: 15%;
     padding-left: 15%;
-    padding-top: 15px;
+  }
+  h3.page-subtitle {
+    margin-top: 40px!important;
   }
   .article table th {
     font-size: 0.75em;
   }
 }
 
-@media only screen and (min-width: 1200px) {
-  /*html{
-    height:100%;
-    min-height:100%;
-  }*/
-  body {
-    font-size:1.8em;
-    /*min-height:100%;*/
-  }
-  h1 { font-size:2.25em; }
-  h2 { font-size:1.9em; }
-  h3 { font-size:1.7em; }
-  h4 { font-size:1.5em; }
-  h5 { font-size:1.3em; }
-  h6 { font-size:1.1em; }
+/* Desktop only */
+@media (min-width: 60em) {
   section { padding: 60px 0; }
-  .darken {
-    background-color: rgba(0,0,0,0.8);  
-  }
-  .page-title {
-    padding-top: 200px;
-    padding-bottom: 60px;
-  }
   .navbar-default .navbar-nav > li > a {
-    font-size: 22px;
+    font-size: 1.375em;
   }
   .top-navbar {
-    font-size: 0.8em;
+    font-size: 0.875em;
   }
-  .carousel {
-    height: 580px;
-  }
-  .carousel .item {
-    height: 580px;
-  }
+  .carousel,
+  .carousel .item,
   .carousel-inner > .item > img {
     height: 580px;
   }

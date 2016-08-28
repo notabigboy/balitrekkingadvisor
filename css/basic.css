@@ -1,8 +1,5 @@
-@import 'https://fonts.googleapis.com/css?family=ABeeZee';
-@import 'https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz';
-
 body {
-  padding-top: 100px;
+  /*padding-top: 100px;*/
   color: #5a5a5a;
   font-family: 'ABeeZee', sans-serif;
   background-image: url('../images/cover.jpg'); 
@@ -24,13 +21,12 @@ section {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Yanone Kaffeesatz', 'sans-serif';
+  font-family: 'Yanone Kaffeesatz', sans-serif;
   font-weight: 300;
   text-transform: uppercase;
 }
 
 h1 {
-  line-height: 1.25;
   border-bottom: 1px solid #ccc;
   padding-bottom: 40px;
   margin-bottom: 60px;
@@ -45,7 +41,6 @@ h1 small {
 }
 
 h2.text-heading {
-  /*font-size: 36px;*/
   padding-bottom: 30px;
   margin-bottom: 40px;
   border-bottom: 1px solid #777; 
@@ -55,6 +50,10 @@ h2.text-heading.black {
   border-color: #333;
 }
 
+.darken {
+  background-color: rgba(0,0,0,0.8);  
+}
+
 .text-white {
   color: #fff;
   border-color: #fff;
@@ -62,6 +61,61 @@ h2.text-heading.black {
 
 .text-black {
   color: #000;
+}
+
+.affix {
+  top: 0;
+  width: 100%;
+  -webkit-transition: all 0.5s ease-in;
+  -moz-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+}
+
+.affix-top {
+  position: static;
+  top: -100px;
+}
+
+#top-contacts {
+  background-color: #0577B6;
+  color: #fff;
+}
+
+#top-contacts ul li {
+  padding-top: 6px;
+}
+
+.navbar {
+  margin: 0;
+}
+
+.navbar-default {
+  background-color: #EBEBEB;
+}
+
+.navbar-default .navbar-nav > li > a {
+  font-family: 'Yanone Kaffeesatz', 'sans-serif';
+  text-transform: uppercase;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #0577b6;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #0577b6;
+}
+
+.navbar-brand {
+  padding: 0;
+}
+
+.navbar-brand img {
+  height: 100px;
 }
 
 #services {
@@ -137,13 +191,18 @@ h2.text-heading.black {
 }
 
 .page-title {
-  padding-top: 200px;
-  padding-bottom: 60px;
+  padding-top: 100px;
+  padding-bottom: 40px;
   color: #fff;
 }
+
 .page-title h1 {
-  padding-bottom: 10px;
-  margin-bottom: 10px;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+.page-title p {
+  font-size: 1.5em;
+  margin: 0;
 }
 
 .article {
@@ -295,37 +354,4 @@ h2.text-heading.black {
 }
 #footer hr {
   border-color: #5A5A5A;
-}
-
-.top-navbar {
-  background-color: #0577B6;
-  /*font-family: 'Yanone Kaffeesatz', 'sans-serif';*/
-  color: #fff;
-}
-.top-navbar ul li {
-  padding-top: 10px;
-}
-.navbar-default {
-  background-color: #EBEBEB;
-  /*font-family: 'Yanone Kaffeesatz', 'sans-serif';*/
-}
-.navbar-default .navbar-nav > li > a {
-  font-family: 'Yanone Kaffeesatz', 'sans-serif';
-  /*font-weight: 600;*/
-  text-transform: uppercase;
-}
-.navbar-default .navbar-nav > li > a:hover,
-.navbar-default .navbar-nav > li > a:focus {
-  color: #0577b6;
-}
-.navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:hover,
-.navbar-default .navbar-nav > .active > a:focus {
-  color: #0577b6;
-}
-.navbar-brand {
-  padding: 0;
-}
-.navbar-brand img {
-  height: 100px;
 }
